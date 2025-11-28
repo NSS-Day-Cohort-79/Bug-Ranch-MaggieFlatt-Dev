@@ -76,10 +76,14 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > The value of `drovers` will be an array of objects (the drovers names and info) randomly selected from the database module.
+   >ATTEMPT #1 The value of `drovers` will be an array of objects (the drovers names and info) randomly selected from the database module.
+
+   >ATTEMPT #2 the value of `drovers` will be an array of 5 randomly chosen drovers selected from the drovers array in database.
 
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > The value of `drover` is each object in the `drovers` array, and `drovers` is the array holding the objects.
+   >>ATTEMPT #1 The value of `drover` is each object in the `drovers` array, and `drovers` is the array holding the objects.
+
+   >>ATTEMPT #2 `drovers` is an array that holds the 5 drover objects. Each time the loop iterates, `drover ` gets assigned the current object from that array. So, first iteration `drover` would equal the first drover object. Second iteration `drover` would be equal to the second drover object, and so on until the loop iterates through all 5 drover objects.
 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > https://www.loom.com/share/7493d828098345d1b41d69a6ac6f9c42 
@@ -91,13 +95,20 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > This is a for loop. It is setting the variable forestNumber to 0, then checking to see if the first forest object's area is greater than 0, if it is then that number (area) gets added to the variable forestNumber. Then it loops through each object in the array and pushes any objects that meet the requirements to the `forest` array. 
+
+   >ATTEMPT #1 This is a for loop. It is setting the variable forestNumber to 0, then checking to see if the first forest object's area is greater than 0, if it is then that number (area) gets added to the variable forestNumber. Then it loops through each object in the array and pushes any objects that meet the requirements to the `forest` array. 
+
+   >ATTEMPT #2 this is a for loop. The first part is the initialization and that sets the variable forestNumber value to 0. The second part is the condition and that checks if forestNumber is less than areas.forests, which holds the value of 2. As long as that condition is true, the loop will execute and add "forest" to the journey array. The third part is the increment and increases forestNumber by 1. This repeats until the condition becomes false. When forestNumber reaches 2, the loop stops because 2 is not less than 2. 
 
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > The value of `database` is the arrays of objects cattleTypes and drovers.
+   >ATTEMPT #1 The value of `database` is the arrays of objects cattleTypes and drovers.
+
+   >ATTEMPT #2 `database` is an object that contains the arrays cattleType and drovers. cattleTypes holds 4 objects with the properties id and breed, and drovers holds 50 objects with the properties of id, first_name, last_name, and gender. These two arrays are related data so we have placed them together in the `database` object.
 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > herdSize is the parameter of the function and it is getting it's value from ??. I don't think we have defined the herd size anywhere? 
+   >ATTEMPT #1 herdSize is the parameter of the function and it is getting it's value from ??. I don't think we have defined the herd size anywhere? 
+
+   >ATTEMPT #2 `(herdsize)` is the name the function gave to whatever value gets passed in (parameter). In this case the value that gets passed in is the variable cattleToDrive which has the value of 50 and can be found in the main module. 
 
 ## When You Are Done
 

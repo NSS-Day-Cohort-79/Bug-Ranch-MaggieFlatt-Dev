@@ -9,7 +9,7 @@ const hireDrovers = (herdSize) => {
         const randomHerderId = Math.floor(Math.random() * allDrovers.length)
         drovers.push(allDrovers[randomHerderId])
     }
-
+        return drovers
 }
 
 module.exports = { hireDrovers }
